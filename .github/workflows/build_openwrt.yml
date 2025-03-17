@@ -24,7 +24,7 @@ on:
         default: 'true'
 
 env:
-  REPO_URL: https://github.com/kevinCSDN/lede_5.4.250
+  REPO_URL: https://github.com/kevinCSDN/lede_5.4.260
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
