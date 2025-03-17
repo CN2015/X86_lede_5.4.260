@@ -17,7 +17,7 @@
 #sed -i 's/+uhttpd +uhttpd-mod-ubus //g' feeds/luci/collections/luci/Makefile    # 删除uhttpd
 #sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/lean/default-settings/files/zzz-default-settings    # 设置密码为空
 #sed -i 's/PATCHVER:=6.1/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
-sed -i 's/PATCHVER:=6.6/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
+#sed -i 's/PATCHVER:=6.6/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
 #sed -i '$ a uci commit uhttpd' package/lean/default-settings/files/zzz-default-settings
 
 # feed重建
@@ -32,7 +32,7 @@ sed -i 's/PATCHVER:=6.6/PATCHVER:=5.4/g' target/linux/x86/Makefile   # x86机型
 rm -rf feeds/small/luci-app-openclash
 
 #删除luci/applications/luci-app-ksmbd
-rm -rf feeds/luci/applications/luci-app-ksmbd
+rm -rf feeds/luci/applications/luci-app-samba4
 rm -rf package/lean/autosamba
 
 #git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
