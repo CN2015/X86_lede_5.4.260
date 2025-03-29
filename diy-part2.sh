@@ -52,8 +52,8 @@ rm -rf package/lean/autosamba
 # sed -i 's|admin\\|admin\\/services\\|g' feeds/luci/applications/luci-app-dockerman/luasrc/view/dockerman/container.htm
 
 # 调整 ZeroTier 到 服务 菜单
-sed -i 's/vpn/services/g; s/VPN/Services/g' feeds/luci/applications/luci-app-zerotier/luasrc/controller/zerotier.lua
-sed -i 's/vpn/services/g' feeds/luci/applications/luci-app-zerotier/luasrc/view/zerotier/zerotier_status.htm
+# sed -i 's/vpn/services/g; s/VPN/Services/g' feeds/luci/applications/luci-app-zerotier/luasrc/controller/zerotier.lua
+# sed -i 's/vpn/services/g' feeds/luci/applications/luci-app-zerotier/luasrc/view/zerotier/zerotier_status.htm
 
 # 取消对 samba4 的菜单调整
 # sed -i '/samba4/s/^/#/' package/lean/default-settings/files/zzz-default-settings
@@ -92,6 +92,3 @@ sed -i 's/"Online User"/"在线用户"/g' `egrep "Online User" -rl ./`
 sed -i 's/"备份与升级"/"备份/升级"/g' `egrep "备份与升级" -rl ./`
 sed -i 's/"UPnP"/"即插即用"/g' `egrep "UPnP" -rl ./`
 
-
-./scripts/feeds update -a
-./scripts/feeds install -a
